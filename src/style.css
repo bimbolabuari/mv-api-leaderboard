@@ -8,6 +8,7 @@
 body {
   width: 80%;
   margin: 30px auto 0;
+  background-color: aliceblue;
 }
 
 .flex {
@@ -50,16 +51,12 @@ button {
   padding: 5px;
 }
 
-.display ul {
-  padding: 5px;
+.display li:nth-child(odd) {
+  background: aliceblue;
 }
 
-.display ul:nth-child(odd) {
-  background: rgb(179, 175, 175);
-}
-
-.display ul:nth-child(even) {
-  background: #fff;
+.display li:nth-child(even) {
+  background: white;
 }
 
 @media only screen and (min-width: 600px) {
