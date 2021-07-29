@@ -13,7 +13,7 @@
 
 ## Live Preview
 
-[Github deploy Page](https://bimbolabuari.github.io/mv-api-leaderboard/)
+[Netlify deploy Page](https://deploy-preview-3--bimbola-mv-leaderboard.netlify.app/)
 
 ## Author
 
