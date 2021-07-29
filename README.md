@@ -1,6 +1,6 @@
 # LEADERBOARD
 
-> This project is a Microverse exercise on Webpack that showcase the knowledge of HTML, CSS, Webpack Configuration, Javascript, import and export modules.
+> This project is a Microverse exercise on Webpack that showcase the knowledge of HTML, CSS, Webpack Configuration, Javascript, import and export modules, async and await, fetch API, eventListeners.
 
 
 ## Built With
