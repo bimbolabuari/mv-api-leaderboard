@@ -6,7 +6,7 @@ const username = document.querySelector('.username');
 const userscore = document.querySelector('.userscore');
 const refreshBtn = document.querySelector('.refresh');
 
-async function postData(gamerName, gamerScore) {
+const postData = async (gamerName, gamerScore) => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ygWEfybemzwhtBzH65xA/scores/', {
     method: 'POST',
     headers: {
@@ -19,7 +19,7 @@ async function postData(gamerName, gamerScore) {
   })
     .then((res) => res.json());
   return response;
-}
+};
 
 form.addEventListener('submit', (e) => {
   const usernameValue = username.value;
@@ -29,11 +29,12 @@ form.addEventListener('submit', (e) => {
   form.reset();
 });
 
-async function getData() {
+const getData = async () => {
   const refreshData = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ygWEfybemzwhtBzH65xA/scores/');
   const refreshJsonData = await refreshData.json();
   return refreshJsonData;
-}
+};
+
 refreshBtn.addEventListener('click', () => {
   getData().then((data) => {
     displayGame.innerHTML = '';
